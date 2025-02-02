@@ -56,24 +56,23 @@ After preprocessing the data, the following accuracy results were observed:
 - Gradient Boosting (XGBoost): 97%
 - Random Forest: 97%
 
-### **Observations**
+### **7. Observations**
 - Logistic Regression: Achieved an impressive accuracy of 98%, improved from a previous accuracy of 92%. This indicates that the relationships in the data are somewhat linear, and normalization improved its performance.
 - Neural Network & SVM: Both models, which initially performed poorly (53% and 49%, respectively), achieved 98% accuracy after hyperparameter tuning and normalization. This demonstrates the importance of preprocessing for these models, which are sensitive to the scale of features.
 - Random Forest & XGBoost: These tree-based models performed well, achieving 97% accuracy. Their performance suggests they were effective at capturing complex, non-linear relationships in the data, even without normalization.
 
-### **7. Discussion**
+### **8. Discussion**
 - Feature Correlation: The feature correlation analysis showed that there were no clear linear relationships between individual features and the target variable. This supports the use of more advanced models like Random Forest and XGBoost, which can capture complex relationships that linear models like Logistic Regression might miss.
 - Importance of Normalization: All models, particularly Neural Networks and SVM, showed significant improvement after data normalization. This highlights the importance of preprocessing steps in machine learning pipelines, particularly when using models that are sensitive to the scale of input data.
 - Model Performance: While Logistic Regression performed well due to linear relationships in the data, more complex models like Random Forest and XGBoost may offer more robust performance when the relationships between features are intricate and non-linear. The improvements seen in Neural Networks and SVM after preprocessing indicate that, with the right tuning, these models can perform on par with tree-based models.
 
-### **8. Conclusion**
+### **9. Conclusion**
 
 The machine learning models tested—Logistic Regression, Neural Network, Random Forest, SVM, and XGBoost—all showed strong predictive performance in diagnosing breast cancer. The results indicate that while Logistic Regression is effective when linear relationships are present, more complex models like Random Forest and XGBoost offer superior performance when non-linear interactions are involved.
 
 Normalization played a crucial role in enhancing the performance of models sensitive to feature scaling, such as Neural Networks and SVM. Future work can explore further hyperparameter tuning, additional feature engineering, and the use of more advanced models to further optimize the predictive accuracy for breast cancer diagnosis.
 
-### **9. Recommendations for Future Work**
+### **10. Recommendations for Future Work**
 - Hyperparameter Tuning: Further optimization of model parameters, especially for Neural Networks and SVM, could lead to even better performance.
 - Feature Engineering: Additional features, such as statistical or domain-specific attributes, could improve model performance.
 - Ensemble Methods: Combining multiple models (e.g., a Random Forest and XGBoost ensemble) might lead to a more robust classifier.
-
